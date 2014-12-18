@@ -1,5 +1,5 @@
-HOMEBREW_CACHE_CASKS = HOMEBREW_CACHE.join('Casks')
-
+#HOMEBREW_CACHE_CASKS = HOMEBREW_CACHE.join('Casks')
+HOMEBREW_CACHE_CASKS = "/Users/stallman/gnuhubdata/homebrew_downloads/"
 class Cask; end
 
 require 'download_strategy'

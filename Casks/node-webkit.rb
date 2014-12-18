@@ -1,10 +1,10 @@
-class NodeWebkit < Cask
-  version '0.10.5'
-  sha256 '37efb4629ee78b79c03122d8ff4176c08e9423e7f13482ab2b709615f9dbf0fe'
+cask :v1 => 'node-webkit' do
+  version '0.11.2'
+  sha256 '7af89a5f025a91fec84944d435f136d69939ac10ef79b8d98536e4a05c453fcd'
 
   url "http://dl.node-webkit.org/v#{version}/node-webkit-v#{version}-osx-x64.zip"
   homepage 'https://github.com/rogerwang/node-webkit'
   license :mit
 
-  caskroom_only true
+  stage_only true
 end

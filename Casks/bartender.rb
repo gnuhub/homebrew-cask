@@ -1,4 +1,4 @@
-class Bartender < Cask
+cask :v1 => 'bartender' do
   version :latest
   sha256 :no_check
 
@@ -10,8 +10,8 @@ class Bartender < Cask
   app 'Bartender.app'
 
   postflight do
-    # Don't ask to move the app bundle to /Applications
-    system '/usr/bin/defaults', 'write', 'com.surteesstudios.Bartender', 'moveToApplicationsFolderAlertSuppress', '-bool', 'true'
+    suppress_move_to_applications
   end
+
   zap :delete => '~/Library/Preferences/com.surteesstudios.Bartender.plist'
 end

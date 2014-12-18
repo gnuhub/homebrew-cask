@@ -1,4 +1,4 @@
-class BeyondCompare < Cask
+cask :v1 => 'beyond-compare' do
   version '4.0.0.18847'
   sha256 'cb9987b62ac68a2493b7bc5678125fbf1b8919796bc82718ddd23958768fd457'
 
@@ -9,7 +9,6 @@ class BeyondCompare < Cask
   app 'Beyond Compare.app'
 
   postflight do
-    # Don't ask to move the app bundle to /Applications
-    system '/usr/bin/defaults', 'write', 'com.ScooterSoftware.BeyondCompare', 'moveToApplicationsFolderAlertSuppress', '-bool', 'true'
+    suppress_move_to_applications
   end
 end

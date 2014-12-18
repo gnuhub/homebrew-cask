@@ -1,10 +1,10 @@
-class Rstudio < Cask
-  version '0.98.1073'
-  sha256 '115d0e7670d4da08fa98446a1c12d4d25bb5748b42f483677e8be6c477a79af1'
+cask :v1 => 'rstudio' do
+  version '0.98.1091'
+  sha256 'ea8baebe66903312bb84816669711b11f0dcd377a6f8c1c4c9f4c669ebd3dc18'
 
   url "http://download1.rstudio.org/RStudio-#{version}.dmg"
   homepage 'http://www.rstudio.com/'
-  license :unknown
+  license :affero
 
   app 'RStudio.app'
 

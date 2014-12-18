@@ -1,10 +1,10 @@
-class Infinit < Cask
+cask :v1 => 'infinit' do
   version :latest
   sha256 :no_check
 
-  url 'http://download.infinit.io/macosx/10.8/Infinit-ia64.dmg'
+  url 'https://download.infinit.io/macosx/installer/Infinit.dmg'
   homepage 'https://infinit.io/'
-  license :unknown
+  license :unknown    # todo: improve this machine-generated value
 
   app 'Infinit.app'
 end

@@ -1,6 +1,6 @@
-class AdobeAir < Cask
+cask :v1 => 'adobe-air' do
   version '15.0'
-  sha256 'd0b82ca3c266034b9bc3029e3bb2e69e1a242af5012e6eebafb68cc489609f2d'
+  sha256 :no_check # required as upstream package is updated in-place
 
   url "http://airdownload.adobe.com/air/mac/download/#{version}/AdobeAIR.dmg"
   homepage 'https://get.adobe.com/air/'

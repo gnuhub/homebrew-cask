@@ -1,6 +1,6 @@
-class Autodmg < Cask
-  version '1.5'
-  sha256 '3a033cf88ac8ee4ea0ce2629a6a7ae8d63d2abe268fe9bd8afb9863910247474'
+cask :v1 => 'autodmg' do
+  version '1.5.2'
+  sha256 'a18cc5a840e56faaba133ab0cb3ea24e50b71a81cc87cd436ef71e739e62fea0'
 
   url "https://github.com/MagerValp/AutoDMG/releases/download/v#{version}/AutoDMG-#{version}.dmg"
   homepage 'https://github.com/MagerValp/AutoDMG'

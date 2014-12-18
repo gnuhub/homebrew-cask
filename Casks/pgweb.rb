@@ -1,6 +1,6 @@
-class Pgweb < Cask
-  version '0.3.0'
-  sha256 'b871676c5c2fafa6deabcee8a72dd593e3562504dd32e38ea03840219ea60eba'
+cask :v1 => 'pgweb' do
+  version '0.4.1'
+  sha256 '3c97605f1ac22f03a737a2d32a45b8f35988290123d593d0c21cb28010893fc7'
 
   url "https://github.com/sosedoff/pgweb/releases/download/v#{version}/pgweb_darwin_amd64.zip"
   homepage 'https://github.com/sosedoff/pgweb'

@@ -1,10 +1,10 @@
-class Itools < Cask
-  version '2.4.1'
-  sha256 '9991e75df60588280837e62b3704b23c5bb47076b45660921e439ac7e7e16d24'
+cask :v1 => 'itools' do
+  version '2.4.3'
+  sha256 '4d17f188c710649a952eb66b75989fe739e848fc98db1970bf98fca0ae3f8cf9'
 
   url "http://dl2.itools.hk/dl/iTools_#{version}.dmg"
   homepage 'http://pro.itools.cn/mac'
-  license :unknown
+  license :unknown    # todo: improve this machine-generated value
 
   app 'iTools.app'
 end

@@ -1,17 +1,16 @@
-class Soulver < Cask
+cask :v1 => 'soulver' do
   version :latest
   sha256 :no_check
 
   url 'http://www.acqualia.com/files/download.php?product=soulver'
   appcast 'http://www.acqualia.com/soulver/appcast/soulver2.xml'
   homepage 'http://www.acqualia.com/soulver/'
-  license :unknown
+  license :unknown    # todo: improve this machine-generated value
 
   app 'Soulver.app'
 
   postflight do
-    # Don't ask to move the app bundle to /Applications
-    system '/usr/bin/defaults', 'write', 'com.acqualia.soulver', 'moveToApplicationsFolderAlertSuppress', '-bool', 'true'
+    suppress_move_to_applications
   end
 
   zap :delete => [
